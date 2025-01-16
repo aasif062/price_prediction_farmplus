@@ -103,9 +103,9 @@ def predict():
         # Return prediction to the HTML page
         return render_template('crop_pred.html', prediction=f"{predicted_price_int} Rupees Per Quintal")
 
-if __name__ == '__main__':
-    # Load or train model and encoders
-    load_model_and_encoders()
+# if __name__ == '__main__':
+#     # Load or train model and encoders
+#     load_model_and_encoders()
 
-    # Run the Flask app
-    app.run(debug=True)
+#     # Run the Flask app
+#     app.run(debug=True)
