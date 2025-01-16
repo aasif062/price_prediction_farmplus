@@ -109,3 +109,12 @@ def predict():
 
 #     # Run the Flask app
 #     app.run(debug=True)
+if __name__ == '__main__':
+    # Load or train model and encoders
+    load_model_and_encoders()
+
+    # Get the PORT environment variable (default to 5000 for local testing)
+    port = int(os.environ.get("PORT", 5000))
+
+    # Run the Flask app
+    app.run(host="0.0.0.0", port=port)
