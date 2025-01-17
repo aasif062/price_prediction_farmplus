@@ -240,7 +240,7 @@
     </div>
     <div id="MAIN">
       <div id="d"> 
-        <h2><i class="fa-solid fa-hand-holding-dollar"></i> Price Prediction Model : </h2>
+       <center> <h2><i class="fa-solid fa-hand-holding-dollar"></i> Price Prediction Model : </h2></center>
         <!--h2>Fill in the Inputs and Get your Crop Price Predicted !!</h2-->
         <div id="X">
         <center>    
@@ -1946,16 +1946,16 @@
             
             <label for="Commodity"><i class="fab fa-pagelines"></i> CROP NAME :</label>
             <select name="Commodity" id="commodities">
+                <option value="disabled selected">Select a Crop</option>
                 <option value="Amaranthus">Amaranthus</option>
                   <option value="Apple">Apple</option>
                   <option value="Ashgourd">Ashgourd</option>
                   <option value="Banana">Banana</option>
                   <option value="Beetroot">Beetroot</option>
                   <option value="Bhindi(Ladies Finger)">Bhindi (Ladies Finger)</option>
-                  <option value="Bitter Gourd">Bitter Gourd</option>
+                  <option value="Bitter gourd">Bitter Gourd</option>
                   <option value="Bottle gourd">Bottle Gourd</option>
                   <option value="Brinjal">Brinjal</option>
-                  <option value="broccoli">Broccoli</option>
                   <option value="Cabbage">Cabbage</option>
                   <option value="Capsicum">Capsicum</option>
                   <option value="Carrot">Carrot</option>
@@ -2464,9 +2464,10 @@
               </select>
               <br><br>
             
-            <label for="Grade"><i class="fas fa-balance-scale"></i> GRADE :</label>
+            <label for="Grade"><i class="fas fa-balance-scale"></i> QUALITY :</label>
             <select name="Grade" id="varieties">
-                <option value="FAQ">FAQ :</option>
+                <option value="disabled selected">Select a Quality</option>
+                <option value="FAQ">FAQ</option>
                 <option value="Large">Large</option>
                 <option value="Medium">Medium</option>
             </select>
@@ -2481,11 +2482,11 @@
     </div>
 
     <div id="F">
-        <h2><i id="sc"  class="fa-solid fa-scale-balanced"></i> <i id="sc1" class="fa-solid fa-scale-balanced fa-shake"></i>Estimated Market Price :</h2>
+      <center>  <h2><i id="sc"  class="fa-solid fa-scale-balanced"></i> <i id="sc1" class="fa-solid fa-scale-balanced fa-shake"></i>Estimated Market Price :</h2></center>
         <div id="Y">
         {% if prediction %}
         <div class="result" style="text-align: center;">
-            <p><strong><i class="fas fa-coins"></i> Predicted Price:</strong><h3><i class="fas fa-rupee-sign"></i> {{ prediction }} per Quintals</h3></p>
+            <p><strong><i class="fas fa-coins"></i> Predicted Price:</strong><h3><i class="fas fa-rupee-sign"></i> {{ prediction }}</h3></p>
         </div>
         {% endif %}
        </div>
